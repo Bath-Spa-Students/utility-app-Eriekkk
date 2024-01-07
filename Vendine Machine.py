@@ -60,40 +60,40 @@ soup = [#dictionary fo the all soup items
     {"Code":"E10", "soup": "Mushroom", "Price": 5.50 },
 ]
 ceareal = [#dictionary for all the cereal items
-    {"Code":"E1", "cereal": "Cheerios", "Price": 12.50 },
-    {"Code":"E2", "cereal": "Corn Flakes", "Price": 15.00 },
-    {"Code":"E3", "cereal": "Froot loops", "Price": 12.00 },
-    {"Code":"E4", "cereal": "Captain Crunch", "Price": 10.00 },
-    {"Code":"E5", "cereal": "Lucky Charms", "Price": 13.50 },
-    {"Code":"E6", "cereal": "General Mills", "Price": 10.00 },
-    {"Code":"E7", "cereal": "Nestle", "Price": 11.00 },
-    {"Code":"E8", "cereal": "Frosted Flakes", "Price": 13.00 },
-    {"Code":"E9", "cereal": "Apple Jacks", "Price": 10.00 },
-    {"Code":"E10", "cereal": "Rice Krispies", "Price": 11.50 },
+    {"Code":"F1", "cereal": "Cheerios", "Price": 12.50 },
+    {"Code":"F2", "cereal": "Corn Flakes", "Price": 15.00 },
+    {"Code":"F3", "cereal": "Froot loops", "Price": 12.00 },
+    {"Code":"F4", "cereal": "Captain Crunch", "Price": 10.00 },
+    {"Code":"F5", "cereal": "Lucky Charms", "Price": 13.50 },
+    {"Code":"F6", "cereal": "General Mills", "Price": 10.00 },
+    {"Code":"F7", "cereal": "Nestle", "Price": 11.00 },
+    {"Code":"F8", "cereal": "Frosted Flakes", "Price": 13.00 },
+    {"Code":"F9", "cereal": "Apple Jacks", "Price": 10.00 },
+    {"Code":"F10", "cereal": "Rice Krispies", "Price": 11.50 },
 ]
 chips = [#dictionary for all the chips items
-    {"Code":"F1", "chips": "Takis", "Price": 5.00 },
-    {"Code":"F2", "chips": "Doritos", "Price": 7.00 },
-    {"Code":"F3", "chips": "Lays", "Price": 7.00 },
-    {"Code":"F4", "chips": "Cheetos", "Price": 3.50 },
-    {"Code":"F5", "chips": "Pringles", "Price": 8.50 },
-    {"Code":"F6", "chips": "Tostitos", "Price": 10.00 },
-    {"Code":"F7", "chips": "Sun Chips", "Price": 5.00 },
-    {"Code":"F8", "chips": "Fritos", "Price": 7.00 },
-    {"Code":"F9", "chips": "Popchips", "Price": 5.00 },
-    {"Code":"F10", "chips": "Cape Cod", "Price": 5.50 },
+    {"Code":"G1", "chips": "Takis", "Price": 5.00 },
+    {"Code":"G2", "chips": "Doritos", "Price": 7.00 },
+    {"Code":"G3", "chips": "Lays", "Price": 7.00 },
+    {"Code":"G4", "chips": "Cheetos", "Price": 3.50 },
+    {"Code":"G5", "chips": "Pringles", "Price": 8.50 },
+    {"Code":"G6", "chips": "Tostitos", "Price": 10.00 },
+    {"Code":"G7", "chips": "Sun Chips", "Price": 5.00 },
+    {"Code":"G8", "chips": "Fritos", "Price": 7.00 },
+    {"Code":"G9", "chips": "Popchips", "Price": 5.00 },
+    {"Code":"G10", "chips": "Cape Cod", "Price": 5.50 },
 ]
 other = [#dictionary for the other items
-    {"Code":"G1", "other": "French Fries", "Price": 10.00 },
-    {"Code":"G2", "other": "Chicken with Rice", "Price": 10.00 },
-    {"Code":"G3", "other": "Fried Egg", "Price": 10.00 },
-    {"Code":"G4", "other": "Scramble Egg", "Price": 10.00 },
-    {"Code":"G5", "other": "Chilli Chicken Porotta", "Price": 10.00 },
-    {"Code":"G6", "other": "Oman Chips Porotta", "Price": 10.00 },
-    {"Code":"G7", "other": "Tapsilog", "Price": 10.00 },
-    {"Code":"G8", "other": "Hotsilog", "Price": 10.00 },
-    {"Code":"G9", "other": "Burger", "Price": 10.00 },
-    {"Code":"G10", "other": "Shawarma", "Price": 10.00 },
+    {"Code":"H1", "other": "French Fries", "Price": 10.00 },
+    {"Code":"H2", "other": "Chicken with Rice", "Price": 10.00 },
+    {"Code":"H3", "other": "Fried Egg", "Price": 10.00 },
+    {"Code":"H4", "other": "Scramble Egg", "Price": 10.00 },
+    {"Code":"H5", "other": "Chilli Chicken Porotta", "Price": 10.00 },
+    {"Code":"H6", "other": "Oman Chips Porotta", "Price": 10.00 },
+    {"Code":"H7", "other": "Tapsilog", "Price": 10.00 },
+    {"Code":"H8", "other": "Hotsilog", "Price": 10.00 },
+    {"Code":"H9", "other": "Burger", "Price": 10.00 },
+    {"Code":"H10", "other": "Shawarma", "Price": 10.00 },
 ]
 
 all_items = bread + drink + fruits + noodles + soup + ceareal + chips + other #to put all the items into one variable
@@ -202,10 +202,10 @@ def main():
                     else:
                         change = calculate_change(payment, item_price)
                         if change > 0:
-                            print(f"Your Payment is accepted. Your change is AED {change:.2f}.")
+                            print(f"Your Payment is accepted..... Your change is AED {change:.2f}.")
                             store_change += change  #updating the store change variable
                         else:
-                            print("Your Payment is accepted....")
+                            print("Your Payment is accepted.... You have no change")
                         break
                     
                 item_found = True
